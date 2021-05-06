@@ -1,0 +1,11 @@
+import os
+import time
+
+distros = ['AIX', 'Alpine', 'AlterLinux', 'Anarchy', 'Android', 'Antergos', 'antiX', '"AOSC OS"', '"AOSC OS/Retro"', 'Apricity', 'ArcoLinux', 'ArchBox', 'ARCHlabs', 'ArchStrike', 'XFerience', 'ArchMerge', 'Arch', 'Arch_old', 'Arch', 'Artix', 'Arya', 'Bedrock', 'Bitrig', 'BlackArch', 'BLAG', 'BlankOn', 'BlueLight', 'bonsai', 'BSD', 'BunsenLabs', 'Calculate', 'CentOS', 'ChaletOS', 'Chapeau', 'Chrom', 'Cleanjaro', 'ClearOS', 'ClearLinux', 'Clover', 'Condres', 'CRUX', 'Cucumber', 'Debian', 'Deepin', 'DesaOS', 'Devuan', 'DracOS', 'DragonFly', 'DragonFly_old', 'Drauger', 'Elementary', 'EndeavourOS', 'Endless', 'EuroLinux', 'Exherbo', 'Fedora', 'Fedora_old', 'Feren', 'FreeBSD', 'FreeMiNT', 'Frugalware', 'Funtoo', 'GalliumOS', 'Gentoo', 'Pentoo', 'gNewSense', 'GNOME', 'GNU', 'GoboLinux', 'Grombyang', 'Guix', 'Haiku', 'Huayra', 'Hyperbola', 'janus', 'Kali', 'KaOS', 'KDE_neon', 'Kibojoe', 'Kogaion', 'Korora',  'KSLinux',  'Kubuntu',  'LEDE','Linux_Lite', 'LMDE', 'Lubuntu', 'Lunar', 'macos', 'Mageia','MagpieOS', 'Mandriva', 'Manjaro', 'Maui', 'Mer', 'Minix', 'LinuxMint', 'MX_Linux', 'Namib', 'Neptune', 'NetBSD', 'Netrunner', 'Nitrux', 'NixOS', 'Nurunner', 'NuTyX', 'OBRevenge', 'OpenBSD', 'OpenIndiana',  'openmamba',  'OpenMandriva', 'OpenStage', 'OpenWrt', 'osmc', 'Oracle', 'PacBSD', 'Parabola', 'Pardus', 'Parrot', 'Parsix', 'TrueOS', 'PCLinuxOS',  'Peppermint',  'popos',  'Porteus',  'PostMarketOS', 'Proxmox', 'Puppy', 'PureOS', 'Qubes', 'Radix', 'Raspbian', 'Reborn_OS', 'Redstar', 'Redcore', 'Redhat',  'Refracted_Devuan', 'Regata', 'Rosa', 'sabotage', 'Sabayon', 'Sailfish', 'SalentOS', 'Scientific', 'Septor','SereneLinux', 'SharkLinux', 'Siduction', 'Slackware', 'SliTaz',  'SmartOS','Solus', 'Source_Mage',  'Sparky', 'Star', 'SteamOS', 'SunOS', 'openSUSE_Leap', 'openSUSE_Tumbleweed',   'openSUSE',   'SwagArch',   'Tails',    'Trisquel',    'Ubuntu-Budgie', 'Ubuntu-GNOME',  'Ubuntu-MATE',  'Ubuntu-Studio', 'Ubuntu', 'Venom', 'Void', 'Obarun', 'windows10', 'Windows7', 'Xubuntu', 'Zorin','IRIX']
+
+for distro in distros:
+    command = "neofetch -L --ascii_distro " + distro
+    os.system("clear")
+    print("\t" + distro)
+    os.system(command)
+    time.sleep(0.5)
